@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water Reflection Material
+  m_Shader: {fileID: -6465566751694194690, guid: 4bdcd90c11d9e6b4f91921fdee6eb978, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_8077B1FC:
+        m_Texture: {fileID: 2800000, guid: 9ba05732a7708c742a0e0c0a2e1629b5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8D2D0259:
+        m_Texture: {fileID: 8400000, guid: f508209a75a944c418a9df2744d2f0cb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_DD20FF86:
+        m_Texture: {fileID: 2800000, guid: 62959573e22fd414ebce60fa11990955, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_E2DD659A:
+        m_Texture: {fileID: 8400000, guid: f508209a75a944c418a9df2744d2f0cb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 8400000, guid: f508209a75a944c418a9df2744d2f0cb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_3A136BB2: 1
+    - Vector1_A8DD24AA: 0.1
+    m_Colors:
+    - Color_8954342F: {r: 0.88113207, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
