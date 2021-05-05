@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 909535585036858220}
   - component: {fileID: 1293874223}
   - component: {fileID: 1293874222}
+  - component: {fileID: 4741608168776369443}
   m_Layer: 0
   m_Name: Note
   m_TagString: Untagged
@@ -70,6 +71,25 @@ MonoBehaviour:
   goodEffect: {fileID: 8330730198039878431, guid: a58792889040e284ebfe6dae63c56a65, type: 3}
   perfectEffect: {fileID: 2802842195248772722, guid: 4fdca41742ef2f648a8f505fcaf45221, type: 3}
   missEffect: {fileID: 7684641967098930714, guid: a8e6efd94b8e3334db2429086f13fef7, type: 3}
+--- !u!95 &4741608168776369443
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909535585036858221}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: efc76bac82a8d094bb464b982d5d7bbc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &909535586140460470
 GameObject:
   m_ObjectHideFlags: 0

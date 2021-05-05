@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerButton : MonoBehaviour
 {
-    [SerializeField] Sprite defaultSprite = default;
-    [SerializeField] Sprite pressedSprite = default;
     [SerializeField] KeyCode keyToPress = default;
 
     private SpriteRenderer spriteRenderer;
@@ -20,13 +18,11 @@ public class PlayerButton : MonoBehaviour
     {
         if (Input.GetKeyDown(keyToPress))
         {
-            spriteRenderer.sprite = pressedSprite;
+            GetComponent<Animator>().SetTrigger("Pressed");
         }
 
         if (Input.GetKeyUp(keyToPress))
         {
-            spriteRenderer.sprite = defaultSprite;
         }
     }
-
 }

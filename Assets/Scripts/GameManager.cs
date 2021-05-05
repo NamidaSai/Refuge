@@ -6,6 +6,8 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Animator monkAnimator = default;
+    [SerializeField] Animator guqinAnimator = default;
+    [SerializeField] Animator notesHolderAnimator = default;
     [SerializeField] AudioSource currentTrack = default;
     [SerializeField] BeatScroller beatScroller = default;
     [SerializeField] TextMeshProUGUI scoreText = default;
@@ -53,6 +55,9 @@ public class GameManager : MonoBehaviour
                 startPlaying = true;
                 beatScroller.hasStarted = true;
                 monkAnimator.SetBool("musicIsPlaying", true);
+                guqinAnimator.SetTrigger("SlideOut");
+                notesHolderAnimator.SetTrigger("Start");
+                FindObjectOfType<AudioManager>().Play("GuqinSlideOut");
 
                 currentTrack.Play();
             }

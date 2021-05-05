@@ -12,6 +12,11 @@ public class Note : MonoBehaviour
 
     [SerializeField] GameObject hitEffect, goodEffect, perfectEffect, missEffect;
 
+    private void Start()
+    {
+        GetComponent<Animator>().SetFloat("Offset", Random.Range(0f, 0.4f));
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(keyToPress))
@@ -19,7 +24,10 @@ public class Note : MonoBehaviour
             if (canBePressed)
             {
                 wasTriggered = true;
-                gameObject.SetActive(false);
+                canBePressed = false;
+                GetComponent<CircleCollider2D>().enabled = false;
+                GetComponent<Animator>().SetTrigger("Played");
+                StartCoroutine(DeactivateAfter(1f));
                 HandleHitQuality();
             }
         }
@@ -62,6 +70,12 @@ public class Note : MonoBehaviour
             GameManager.instance.NoteMissed();
             Instantiate(missEffect, transform.position, missEffect.transform.rotation);
         }
+    }
+
+    private IEnumerator DeactivateAfter(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        gameObject.SetActive(false);
     }
 }
 
