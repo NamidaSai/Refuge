@@ -43,8 +43,14 @@
      <Compile Include="Assets\Scripts\BeatScroller.cs" />
      <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\SettingsHolder.cs" />
+     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+     <Compile Include="Assets\Scripts\MenuButton.cs" />
+     <Compile Include="Assets\Scripts\MenuHandler.cs" />
+     <Compile Include="Assets\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\Scripts\PersistentObjects.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

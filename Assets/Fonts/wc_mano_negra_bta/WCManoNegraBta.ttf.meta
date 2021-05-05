@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c9625982727e0344b9b2bc452ea3ff69
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - WC Mano Negra Bta
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 337ffa2ccd696fe47bb83fddc1dafce7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

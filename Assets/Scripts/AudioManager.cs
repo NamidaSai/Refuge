@@ -1,5 +1,7 @@
 ﻿using UnityEngine.Audio;
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
 using System;
 
 public class AudioManager : MonoBehaviour
@@ -20,6 +22,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        Play("Ambient");
     }
 
     public void Play(string soundName)
@@ -66,8 +69,22 @@ public class AudioManager : MonoBehaviour
 
         if (sound.source.isPlaying)
         {
-            sound.source.Stop();
+            if (soundName == "breathe")
+            {
+                StartCoroutine(StopLooping(sound));
+            }
+            else
+            {
+                sound.source.Stop();
+            }
         }
+    }
+
+    private IEnumerator StopLooping(Sound sound)
+    {
+        sound.source.loop = false;
+        yield return new WaitWhile(() => sound.source.isPlaying);
+        sound.source.Stop();
     }
 
     public void StopPauseSounds()
