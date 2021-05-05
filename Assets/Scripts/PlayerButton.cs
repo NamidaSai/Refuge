@@ -7,11 +7,13 @@ public class PlayerButton : MonoBehaviour
     [SerializeField] KeyCode keyToPress = default;
 
     private SpriteRenderer spriteRenderer;
+    AudioManager audioManager;
 
 
     private void Start()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     private void Update()
@@ -19,10 +21,7 @@ public class PlayerButton : MonoBehaviour
         if (Input.GetKeyDown(keyToPress))
         {
             GetComponent<Animator>().SetTrigger("Pressed");
-        }
-
-        if (Input.GetKeyUp(keyToPress))
-        {
+            audioManager.Play("pluck");
         }
     }
 }

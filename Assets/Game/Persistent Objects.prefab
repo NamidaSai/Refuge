@@ -136,6 +136,14 @@ MonoBehaviour:
     loop: 1
     stopOnPause: 0
     source: {fileID: 0}
+  - name: pluck
+    clip: {fileID: 8300000, guid: 7b2d5216d150b334792e5efedfa7926b, type: 3}
+    volume: 0.04
+    pitch: 1
+    randomPitch: 1
+    loop: 0
+    stopOnPause: 0
+    source: {fileID: 0}
 --- !u!1 &7107713408273618758
 GameObject:
   m_ObjectHideFlags: 0
